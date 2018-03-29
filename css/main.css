@@ -1754,6 +1754,32 @@ pre .javascript .function {
   font-size: 14px;
   color: #999;
 }
+.site-author-image {
+  display: block;
+  margin: 0 auto;
+  padding: 2px;
+  max-width: 96px;
+  height: auto;
+  border: 2px solid #333;
+/* start*/
+  border-radius: 50%;
+  webkit-transition: 1.4s all;
+  moz-transition: 1.4s all;
+  ms-transition: 1.4s all;
+  transition: 1.4s all;
+/* end */
+}
+.site-author-image:hover {
+  background-color: #55dae1;
+  webkit-transform: rotate(360deg) scale(1.1);
+  moz-transform: rotate(360deg) scale(1.1);
+  ms-transform: rotate(360deg) scale(1.1);
+  -webkit-transform: rotate(360deg) scale(1.1);
+  -moz-transform: rotate(360deg) scale(1.1);
+  -ms-transform: rotate(360deg) scale(1.1);
+  -o-transform: rotate(360deg) scale(1.1);
+  transform: rotate(360deg) scale(1.1);
+}
 .site-state {
   overflow: hidden;
   line-height: 1.4;
@@ -1822,7 +1848,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff9aff;
+  background: #c2acff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2659,4 +2685,39 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+body {
+  background: url("/images/blogbk.jpg") no-repeat;
+/* 背景图垂直、水平均居中 */
+  background-position: center center;
+/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+  background-attachment: fixed;
+/* 让背景图基于容器大小伸缩 */
+  background-size: cover;
+/* 设置背景颜色，背景图加载过程中会显示背景色 */
+  background-color: rgba(0,0,0,0.5);
+}
+#sidebar {
+  background: url("/images/sidebar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#sidebar p,
+#sidebar span,
+#sidebar a {
+  color: #fff;
+}
+.content {
+  border-radius: 20px;
+  padding: 30px 60px 30px 60px;
+  background: rgba(255,255,255,0.8) none repeat scroll !important;
+}
+#lv-container {
+  border-radius: 20px;
+  padding: 30px 60px 30px 60px;
+  background: rgba(255,255,255,0.8) none repeat scroll !important;
+}
+#mydivshow {
+  opacity: 0;
 }
